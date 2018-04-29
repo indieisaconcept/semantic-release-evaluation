@@ -1,0 +1,30 @@
+{
+  "name": "semantic-release-evaluation",
+  "version": "0.0.0-development",
+  "description": "Testing semantic-release workflow",
+  "main": "index.js",
+  "scripts": {
+    "prepublish" : "cp ./index.js dist/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indieisaoncept/semantic-release-evaluation.git"
+  },
+  "keywords": [
+    "semantic-release"
+  ],
+  "author": "indieisaconcept <me@indieisaconcept.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indieisaoncept/semantic-release-evaluation/issues"
+  },
+  "homepage": "https://github.com/indieisaoncept/semantic-release-evaluation#readme",
+  "devDependencies": {
+    "semantic-release": "^15.1.7"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
