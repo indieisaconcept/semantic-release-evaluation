@@ -1,13 +1,19 @@
 {
   "name": "semantic-release-evaluation",
-  "version": "1.2.0",
+  "version": "0.0.0-development",
   "description": "Testing semantic-release workflow",
   "main": "index.js",
+  "browser" : "dist/index.js",
   "scripts": {
-    "build": "cp ./index.js dist/",
+    "build": "mkdir -p dist && cp ./index.js dist/",
+    "prebuild": "trash dist",
+    "prepack": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release"
   },
+  "files": [
+      "dist/**/*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/indieisaconcept/semantic-release-evaluation.git"
