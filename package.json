@@ -4,7 +4,7 @@
   "description": "Testing semantic-release workflow",
   "main": "index.js",
   "scripts": {
-    "prepublish": "cp ./index.js dist/",
+    "build": "cp ./index.js dist/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release"
   },
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/indieisaconcept/semantic-release-evaluation#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^2.0.1",
+    "@semantic-release/exec": "^2.2.4",
     "@semantic-release/git": "^4.0.2",
     "@semantic-release/github": "^4.2.12",
     "@semantic-release/npm": "^3.2.4",
