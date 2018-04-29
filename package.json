@@ -2,8 +2,7 @@
   "name": "semantic-release-evaluation",
   "version": "0.0.0-development",
   "description": "Testing semantic-release workflow",
-  "main": "index.js",
-  "browser" : "dist/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "mkdir -p dist && cp ./index.js dist/",
     "prebuild": "trash dist",
