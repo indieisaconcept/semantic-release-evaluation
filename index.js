@@ -1,3 +1,3 @@
 module.exports = {
-    evaluation : false
+    evaluation : true
 };
